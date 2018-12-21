@@ -169,7 +169,7 @@ def player_numbers(team)
     if team_data[:team_name] == team
       team_data.each do |attribute, data|
         if attribute == :players
-          data.each do |guy, stats|
+          data.each do |player_name, stats|
             stats.each do |stat_name, value|
               if stat_name == :number
                 number_array << value
