@@ -255,9 +255,9 @@ def winning_team
     hornets_score += stats[:points]
   end
   if nets_score > hornets_score
-    "The Nets win #{nets_score} to #{hornets_score}!"
+    game_hash[:away][team_name]
   else
-    "The Hornets win #{hornets_score} to #{nets_score}!"
+    game_hash[:home][team_name]
   end
 end
 
