@@ -255,9 +255,9 @@ def winning_team
     hornets_score += stats[:points]
   end
   if nets_score > hornets_score
-    game_hash[:away][team_name]
+    game_hash[:away][:team_name]
   else
-    game_hash[:home][team_name]
+    game_hash[:home][:team_name]
   end
 end
 
