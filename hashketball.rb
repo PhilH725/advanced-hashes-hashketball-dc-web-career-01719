@@ -281,7 +281,7 @@ def player_with_longest_name
   longest_name
 end
 
-#super bonus!
+#super bonus
 def long_name_steals_a_ton?
   highest_steals_player = nil
   highest_steals_amount = nil
@@ -309,7 +309,6 @@ def long_name_steals_a_ton?
   end
 end
 
-#couldve used this
 def get_stat_value_by_player(player, stat)
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
